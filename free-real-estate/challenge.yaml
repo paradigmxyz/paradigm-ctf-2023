@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: free-real-estate
+  annotations:
+    type: KOTH
+    koth_score_order: DESC
+    name: Free Real Estate
+    description: "Inuswap has just airdropped a bunch of tokens to Uniswap users and the price is mooning! You better get some for yourself before it's too late"
+    author: "samczsun, notnotstorm"
+    tags: "koth"
+    flag: ""
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/free-real-estate-challenge:dfa7cc89129729dfa320424a6d753810f237f53053195cb58b132f16453216ee

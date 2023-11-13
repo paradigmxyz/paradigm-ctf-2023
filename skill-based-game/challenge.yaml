@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: skill-based-game
+  annotations:
+    type: PWN
+    name: Skill Based Game
+    description: Unlike other gambling games, this one is purely a game of skill
+    author: "samczsun"
+    tags: "pwn"
+    flag: "PCTF{0n_chA1N_rAnd0Mn355_15_hArD}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/skill-based-game-challenge:2c4b392efef9c8aab278c2dccbffb90c08a82631e0ce00b67aaee6c26350ba4d

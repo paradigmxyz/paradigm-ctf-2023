@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: one-hundred-percent
+  annotations:
+    type: PWN
+    name: 100%
+    description: Your funds are safe when you use our innovative new payment splitter that ensure that 100% of assets make it to their intended recipients
+    author: "samczsun"
+    tags: "pwn"
+    flag: "PCTF{gU355_7H3r3_w45n7_3nOUgH_1NpU7_V4L1D471ON}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/one-hundred-percent-challenge:aa0a501c0a8943be3f58781400e3e8194b20ce7f2dbbfb38a0f5ac8a9354cebb

@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: token-locker
+  annotations:
+    type: PWN
+    name: Token Locker
+    description: If you're launching a new token, you should use our (new and improved) secure liquidity locking contract so your users know you won't rugpull!
+    author: "samczsun"
+    tags: "pwn"
+    flag: "PCTF{0nE_T00_m4ny_945_0PT1m124T10n2}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/token-locker-challenge:4b4e3f46c9cfb6c4661361a6b6f708475e9e124f328769d2c597d99673d899df

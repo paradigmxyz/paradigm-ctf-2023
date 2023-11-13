@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: jotterp
+  annotations:
+    type: PWN
+    name: Jumbled Otter Problems
+    description: "Telephone wires above are sizzlin' like a snare; Honey, I'm on fire, I feel it everywhere (https://osec.io/blog/2022-03-14-solana-security-intro#execution-model)"
+    author: "NotDeGhost"
+    tags: "pwn,solana"
+    flag: "PCTF{jump1ng_b4ck_4nd_40rt5_83y1927}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: kind/healthcheck:938a93f31c9d0b6bc2ba5e23dd9a06aaaa372b6c7d06eedba66a3c920117b130
+  image: gcr.io/paradigm-ctf/jotterp-challenge:c237c82b519d8b752a7e7bc11e9b1330938d58a05e1a161529538a3a7af9d8e1

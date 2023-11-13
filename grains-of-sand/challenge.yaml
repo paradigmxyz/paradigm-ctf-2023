@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: grains-of-sand
+  annotations:
+    type: PWN
+    name: Grains of Sand
+    description: At what point does it stop being a heap?
+    author: "samczsun"
+    tags: "pwn"
+    flag: "PCTF{f33_70K3nS_cauS1n9_pR08L3Ms_a9a1N}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/grains-of-sand-challenge:7e63a10a5ad86beef60c569d877891a815bb5fdc519ae6fa5fa638f255ac7302

@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: enterprise-blockchain
+  annotations:
+    type: PWN
+    name: Enterprise Blockchain
+    description: Smart Contract Solutions is proud to introduce the only Enterprise Blockchain that you'll ever need
+    author: "ChainLight"
+    tags: "pwn"
+    flag: "PCTF{57473_0V3RR1d35_90_8RR}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/enterprise-blockchain-challenge:75e83534e13bb7b233f092833355a0e2544903ee8ed90d614d1fd1ee82fc65dc

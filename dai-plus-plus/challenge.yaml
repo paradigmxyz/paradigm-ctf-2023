@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: dai-plus-plus
+  annotations:
+    type: PWN
+    name: Dai++
+    description: "MakerDAO is such a complex codebase, and we all know that larger codebases are more likely to have bugs. I simplified everything, so there shouldn't be any bugs here"
+    author: "samczsun"
+    tags: "pwn"
+    flag: "PCTF{0V3RFl0W5_WH3r3_Y0u_L3a57_3xp3C7_17}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/dai-plus-plus-challenge:09199a5607673bce2d4dd1154941fc47f305ef57f50cbdba36b4084a3f5fde50

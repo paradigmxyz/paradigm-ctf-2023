@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: dragon-tyrant
+  annotations:
+    type: PWN
+    name: Dragon Tyrant
+    description: "Once upon a time, the planet was tyrannized by a giant dragon. The dragon stood taller than the largest cathedral, and it was covered with thick black scales. Its red eyes glowed with hate, and from its terrible jaws flowed an incessant stream of evil-smelling yellowish-green slime. Sages predicted that a day would come when technology would enable humans to fly and do many other astonishing things. One of the sages, who was held in high esteem by some of the other sages but whose eccentric manners had made him a social outcast and recluse, went so far as to predict that technology would eventually make it possible to build a contraption that could kill the dragon-tyrant."
+    author: "cmichel"
+    tags: "pwn,cryptography"
+    flag: "PCTF{8r0_H4CK5_N54_1N_3VM}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/dragon-tyrant-challenge:6881e150a6a7698d33220f29eb3a60108e6845569c51589c09a7c37f519d037a

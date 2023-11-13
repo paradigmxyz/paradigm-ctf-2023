@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: hopping-into-place
+  annotations:
+    type: PWN
+    name: Hopping into Place
+    description: "A hacker has deposited stolen funds onto your bridge and the victim is asking for your help! Is there any way you can get it back?"
+    author: "samczsun"
+    tags: "pwn"
+    flag: "PCTF{90v3rNANc3_Unm1n1m12At10n}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: kind/healthcheck:938a93f31c9d0b6bc2ba5e23dd9a06aaaa372b6c7d06eedba66a3c920117b130
+  image: gcr.io/paradigm-ctf/hopping-into-place-challenge:cae38cb3bd282e94be71945de9d39419ba783123dd3f0f1ab878a5651f4deb37

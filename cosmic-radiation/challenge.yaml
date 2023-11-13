@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: cosmic-radiation
+  annotations:
+    type: KOTH
+    koth_score_order: DESC
+    name: Cosmic Radiation
+    description: "Have you ever dreamed of hacking some of the biggest contracts in Ethereum? Luck is on your side"
+    author: "samczsun"
+    tags: "koth"
+    flag: ""
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: kind/challenge:77204b7c6fed817d8f9d7feef4c0a3913d39a39b4de644ec3462ff6ac972c392

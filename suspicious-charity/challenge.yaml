@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: suspicious-charity
+  annotations:
+    type: PWN
+    name: Suspicious Charity
+    description: Haven't you heard that sharing is caring? If you're extra generous, I might even have a special gift for you
+    author: "ChainLight"
+    tags: "pwn"
+    flag: "PCTF{5h0uLD_H4v3_u53d_3bcd1c}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: kind/healthcheck:938a93f31c9d0b6bc2ba5e23dd9a06aaaa372b6c7d06eedba66a3c920117b130
+  image: gcr.io/paradigm-ctf/suspicious-charity-challenge:888b0ab90ca76d05b9f65057bd0a1288089ba873cb840224217afcfd22f9691a

@@ -1,0 +1,18 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: oven
+  annotations:
+    type: PWN
+    name: Oven
+    description: Why do they call it an oven?
+    author: "Cayden Liao (Zellic)"
+    tags: "pwn,cryptography"
+    flag: "pctf{F1at_shAm1R_HNP_g0_Cr4ZyyYy_m0rE_1iK3_f4T_Sh4mIr}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/oven-challenge:f3dd0322c35295a3c895695568c32ca6a9b9f3b8e9e8092bcda139f4b65b53a8

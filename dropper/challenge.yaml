@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: dropper
+  annotations:
+    type: KOTH
+    koth_score_order: ASC
+    name: Dropper
+    description: "How is anyone supposed to afford to do an airdrop in this market?"
+    author: "samczsun"
+    tags: "koth"
+    flag: ""
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+  image: gcr.io/paradigm-ctf/dropper-challenge:30d06f45c5691d9e0196b0b35bcfbd11273e0cc9392b7c62d641d674c2676839

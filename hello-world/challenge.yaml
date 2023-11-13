@@ -1,0 +1,19 @@
+apiVersion: kctf.dev/v1
+kind: Challenge
+metadata:
+  name: hello-world
+  annotations:
+    type: PWN
+    name: Hello World
+    description: You know the drill
+    author: "samczsun"
+    tags: "helloworld"
+    flag: "PCTF{w3lC0m3_T0_th3_94m3}"
+spec:
+  deployed: true
+  powDifficultySeconds: 0
+  healthcheck:
+    # TIP: disable the healthcheck during development
+    enabled: false
+    image: kind/healthcheck:938a93f31c9d0b6bc2ba5e23dd9a06aaaa372b6c7d06eedba66a3c920117b130
+  image: gcr.io/paradigm-ctf/hello-world-challenge:28af737108ad68ab23cc1626cf48e406f17c142353c936c8e326840d8672c92a
