@@ -1,0 +1,13 @@
+[profile.default]
+solc = "0.8.22"
+src = 'src'
+libs = ['lib']
+fs_permissions = [{ access = 'read-write', path = '/'}]
+
+remappings = [
+    "forge-std=lib/forge-std/src",
+    "forge-ctf=lib/forge-ctf/src",
+    "@openzeppelin=lib/openzeppelin-contracts",
+]
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
