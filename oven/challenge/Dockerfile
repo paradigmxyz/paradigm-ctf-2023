@@ -14,7 +14,8 @@ WORKDIR /home/user
 COPY --chown=user:user . /home/user/challenge
 
 RUN true && \
-  pip install -r challenge/requirements.txt && \
+  python -m pip install --user --upgrade pip==26.2.2 && \
+  python -m pip install -r challenge/requirements.txt && \
   true
 
 FROM gcr.io/paradigmxyz/ctf/kctf-challenge:latest
